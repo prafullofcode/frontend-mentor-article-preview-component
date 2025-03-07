@@ -1,0 +1,122 @@
+/* - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 500, 700
+- Font size: 13px
+
+.manrope-<uniquifier> {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --grayish-Blue: hsl(212, 23%, 69%);
+  --light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.content-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 1rem;
+  display: flex;
+  height: 28rem;
+}
+
+.drawer-image {
+  border-radius: 1rem 0 0 1rem;
+  z-index: 0;
+  margin-right: -5em;
+}
+
+.card-content {
+  background-color: white;
+  display: flex;
+  gap: 1.5rem;
+  z-index: 1;
+  flex-direction: column;
+  padding: 4rem;
+  max-width: 44rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 145%;
+  color: var(--very-Dark-Grayish-Blue);
+}
+
+.card-paragraph {
+  color: var(--desaturated-Dark-Blue);
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  flex-basis: 100%;
+}
+
+.author-image {
+  width: 4rem;
+  height: 4rems;
+  border-radius: 4rem;
+}
+
+.author-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: 700;
+  color: var(--very-Dark-Grayish-Blue);
+  letter-spacing: 200%;
+}
+
+.post-date {
+  color: var(--desaturated-Dark-Blue);
+}
+
+.share-icon-container {
+  background-color: var(--light-Grayish-Blue);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+}
