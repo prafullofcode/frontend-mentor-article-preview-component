@@ -43,42 +43,45 @@ body {
 }
 
 .card {
-  border-radius: 1rem;
   display: flex;
-  height: 28rem;
 }
 
 .drawer-image {
   border-radius: 1rem 0 0 1rem;
   z-index: 0;
-  margin-right: -5em;
+  width: 100%;
+  margin-right: -10em;
 }
 
 .card-content {
   background-color: white;
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   z-index: 1;
   flex-direction: column;
-  padding: 4rem;
-  max-width: 44rem;
+  border-radius: 0 1rem 1rem 0;
+  padding: 6rem;
+  max-width: 80rem;
 }
 
 .card-title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 145%;
   color: var(--very-Dark-Grayish-Blue);
 }
 
 .card-paragraph {
   color: var(--desaturated-Dark-Blue);
+  font-size: 2em;
+  /* font-weight: 500; */
 }
 
 .card-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
   align-items: center;
 }
 
@@ -91,9 +94,8 @@ body {
 }
 
 .author-image {
-  width: 4rem;
-  height: 4rems;
-  border-radius: 4rem;
+  width: 6em;
+  border-radius: 6rem;
 }
 
 .author-description {
@@ -103,20 +105,78 @@ body {
 
 .author-name {
   font-weight: 700;
+  font-size: 2rem;
   color: var(--very-Dark-Grayish-Blue);
   letter-spacing: 200%;
 }
 
 .post-date {
-  color: var(--desaturated-Dark-Blue);
+  font-size: 2rem;
+  color: var(--grayish-Blue);
 }
 
 .share-icon-container {
   background-color: var(--light-Grayish-Blue);
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4rem;
+  border-radius: 6rem;
+}
+
+.share-icon-container:hover {
+  background-color: var(--very-Dark-Grayish-Blue);
+  cursor: pointer;
+}
+
+.share-icon {
+  width: 2.5rem;
+}
+
+.active-state {
+  position: absolute;
+  right: -24%;
+  bottom: 130%;
+}
+
+.hidden {
+  display: none;
+}
+
+.active-state-share-popup {
+  background-color: var(--very-Dark-Grayish-Blue);
+  padding: 2.5rem 5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 1rem 1rem rgba(128, 128, 128, 0.399);
+}
+
+.share-text {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: var(--grayish-Blue);
+  font-size: 2rem;
+}
+
+.social-media-icons-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.social-media-icons {
+  width: 3rem;
+}
+
+.pointed-inverted-triangle {
+  width: 5rem;
+  background-color: var(--very-Dark-Grayish-Blue);
+  height: 3rem;
+  position: absolute;
+  bottom: -25%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
 }
